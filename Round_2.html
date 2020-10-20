@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GROOTAN TECHNOLOGIES</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <script type="text/javascript" src="download.js"></script>
+</head>
+<body>
+  <div> 
+    <form method="post" id="formToSave">
+      <h2>GROOTAN TEST</h2>
+      <h3>Round 2</h3>
+      <label>Name</label>
+        <input type="text" name="username" id="name" required> 
+      <br><br> 
+      <label>Age</label> 
+        <input type="text" name="age" id="age" required> 
+      <br><br>
+      <label>Country</label> 
+        <select name="country" id="country" required> 
+          <option value="India">India</option> 
+          <option value="Sri Lanka">Kenya</option> 
+          <option value="Australia">Australia</option> 
+        </select> 
+      <br><br>
+      <label>DOB</label>
+        <input type="date" name="birth" id="dob" required> 
+      <br> <br>
+      <label>Gender</label>  
+        <input type="radio" name="gender" id="gender" required> 
+        <label for="male">Male</label> 
+          <input type="radio" name="gender" id="gender" required> 
+        <label for="female">Female</label> 
+      <br><br>
+      <label>Languages Known</label> 
+        <select name="Languages" id="Languages" required> 
+          <option value="Java">Java</option> 
+          <option value="Python">Python</option> 
+          <option value="Ruby">Ruby</option> 
+        </select> 
+      <br><br>
+      <label>Favourite Color</label>
+        <input type="color" id="fc" name="favcolor" value="#ff0000" required>
+      <br><br>
+      <label>Upload Photograph</label>
+        <input type="file" name="img" accept="image/png" id="img" required>
+      <br><br>
+      <label>Email id</label>
+        <input type="text" name="email_id" id="email" required> 
+      <br><br>
+      <label>Start Time</label>
+        <input type="time" id="time" name="time" id="st" required>
+      <br><br>
+      <label>Website Address</label>
+        <input type="text" name="web_address" id="wa" required> 
+      <br><br>
+      <label>CGPA</label> 
+        <input type="range" id="cgpa" name="cgpa" min="1" max="10" value="5" required>
+      <br><br>
+      <input type="submit" id="bt" value="SUBMIT" onclick="saveFile()" onsubmit="msg()">
+    </form>
+  </div>
+</body>
+</html>
